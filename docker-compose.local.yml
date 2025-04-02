@@ -1,0 +1,8 @@
+services:  
+  qlever:
+    ports:
+      - ${PORT_QLEVER}:7000
+    
+  qlever-ui:
+    ports:
+      - ${PORT_QLEVER_UI}:7000

@@ -1,0 +1,22 @@
+services:  
+  qlever:
+    image: adfreiburg/qlever:commit-acb6633
+    container_name: ${PROJECT_NAME}_qlever
+    entrypoint: ["/init/init-wrapper.sh"]
+    environment:
+      - ACCESS_TOKEN=${ACCESS_TOKEN}
+    user: "0:0"
+    volumes:
+      - ./entrypoints/qlever:/init
+      - ${DATA_MOUNT}:/index
+    
+  qlever-ui:
+    image: docker.io/adfreiburg/qlever-ui
+    container_name: ${PROJECT_NAME}_qlever_ui
+    entrypoint: ["/init/init-wrapper.sh"]
+    volumes:
+      - ./entrypoints/qlever-ui:/init
+      - qlever-ui-db:/app/db
+
+volumes:
+  qlever-ui-db:

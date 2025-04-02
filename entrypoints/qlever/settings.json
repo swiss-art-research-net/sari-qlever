@@ -1,0 +1,6 @@
+{
+    "ascii-prefixes-only": true,
+    "num-triples-per-partial-vocab": 500000,
+    "num-triples-per-batch": 100000, 
+    "parallel-parsing": false 
+  }
