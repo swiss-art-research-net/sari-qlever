@@ -8,7 +8,8 @@ services:
     user: "0:0"
     volumes:
       - ./entrypoints/qlever:/init
-      - ${DATA_MOUNT}:/index
+      - ${DATA_MOUNT}:/data
+      - ${INDEX_MOUNT}:/index
     
   qlever-ui:
     image: docker.io/adfreiburg/qlever-ui
