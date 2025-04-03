@@ -1,8 +1,9 @@
 #!/bin/sh
-if [ ! -f /init/.initialized ]; then
+CHECKFILE=/status/.qlever-ui-initialized
+if [ ! -f $CHECKFILE ]; then
     echo "First time database initialization"
     python manage.py migrate
-    touch /init/.initialized
+    touch $CHECKFILE
     echo "Database initialization completed"
 fi
 

@@ -1,4 +1,7 @@
 .env
-entrypoints/*/.initialized
 data/*
+!data/.gitkeep
 index/*
+!index/.gitkeep
+status/*
+!status/.gitkeep
