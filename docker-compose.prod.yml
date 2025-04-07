@@ -1,0 +1,17 @@
+services:  
+  qlever: 
+    environment:
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+      LETSENCRYPT_HOST: ${HOST_NAME_QLEVER}
+      VIRTUAL_HOST: ${HOST_NAME_QLEVER}
+      VIRTUAL_PORT: 7000
+    
+  qlever-ui:
+    environment:
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+      LETSENCRYPT_HOST: ${HOST_NAME_QLEVER_UI}
+      VIRTUAL_HOST: ${HOST_NAME_QLEVER_UI}
+      VIRTUAL_PORT: 7000
+
+volumes:
+  qlever-ui-db:
