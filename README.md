@@ -1,6 +1,6 @@
 # SARI QLever
 
-This repository contains a Docker Compose setup for running the QLever backend and its UI. It is designed to automatically index Turtle files.
+This repository contains a Docker Compose setup for running the [QLever](https://github.com/ad-freiburg/qlever) backend and its UI. It is designed to automatically index Turtle files.
 
 ## Setup
 
