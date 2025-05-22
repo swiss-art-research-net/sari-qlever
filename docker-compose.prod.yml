@@ -25,7 +25,7 @@ services:
         style-src-elem 'self' 'unsafe-inline' https://code.jquery.com https://maxcdn.bootstrapcdn.com;
         font-src 'self' https://maxcdn.bootstrapcdn.com;
         img-src 'self' https: data: blob:;
-        connect-src 'self';
+        connect-src 'self' https://qlever.cs.uni-freiburg.de https://qlever.performing-arts.ch;
     expose:
       - 7000
     networks:
