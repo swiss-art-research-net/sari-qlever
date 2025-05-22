@@ -5,6 +5,8 @@ services:
       LETSENCRYPT_HOST: ${HOST_NAME_QLEVER}
       VIRTUAL_HOST: ${HOST_NAME_QLEVER}
       VIRTUAL_PORT: 7000
+    expose:
+      - 7000
     networks:
     - internal
     - proxy
@@ -15,6 +17,8 @@ services:
       LETSENCRYPT_HOST: ${HOST_NAME_QLEVER_UI}
       VIRTUAL_HOST: ${HOST_NAME_QLEVER_UI}
       VIRTUAL_PORT: 7000
+    expose:
+      - 7000
     networks:
     - internal
     - proxy
