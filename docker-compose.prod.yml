@@ -26,6 +26,7 @@ services:
         font-src 'self' https://maxcdn.bootstrapcdn.com;
         img-src 'self' https: data: blob:;
         connect-src 'self' https://qlever.cs.uni-freiburg.de https://qlever.performing-arts.ch;
+      QLEVERUI_CSRF_TRUSTED_ORIGINS: https://{HOST_NAME_QLEVER_UI}
     expose:
       - 7000
     networks:
