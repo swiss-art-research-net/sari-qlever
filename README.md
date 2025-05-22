@@ -19,7 +19,7 @@ This repository contains a Docker Compose setup for running the [QLever](https:/
 
 4. Start the services using Docker Compose:
    ```bash
-   docker-compose up
+   docker compose up
    ```
 
 ## Usage
@@ -30,6 +30,13 @@ This repository contains a Docker Compose setup for running the [QLever](https:/
 - When the indexing is complete, a status file will be created in the `status/` directory. 
 - To trigger a re-indexing, remove the status file and restart the services.
 
+## Administating the QLever UI
+
+To create a new user for the QLever UI, use the following command:
+
+```bash
+docker compose exec qlever-ui python manage.py createsuperuser
+```
 
 ## License
 
