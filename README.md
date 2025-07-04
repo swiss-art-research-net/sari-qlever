@@ -38,6 +38,10 @@ To create a new user for the QLever UI, use the following command:
 docker compose exec qlever-ui python manage.py createsuperuser
 ```
 
+## Customization
+
+To customize the QLever UI templates, you can include the `docker-compose.customise-templates.yml` file in your Docker Compose setup. This allows you to override the default templates with your own by editining the files in the `customisation/qlever-ui/templates/partials` directory.
+
 ## License
 
 This project is licensed under the MIT License.

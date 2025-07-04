@@ -1,0 +1,124 @@
+<div class="modal" tabindex="-1" role="dialog" id="share">
+    <div class="modal-dialog" role="document" style="width: 80%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">Share your query</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <label>URL to this query in the QLever UI (short, with query hash)</label>
+            <div class="input-group">
+              <input type="text" id="prettyLink" class="form-control" readonly>
+              <span class="input-group-btn">
+                <button class="btn btn-default copy-clipboard-button">
+                  <i class="glyphicon glyphicon-copy"></i> Copy
+                </button>
+              </span>                    
+            </div>
+            <div class="ok-text collapse">
+              <i class="glyphicon glyphicon-ok"></i> Copied URL to clipboard
+            </div>
+          </div>
+          <br>
+          <div>
+            <label>URL to this query in the QLever UI (short, with query hash, execute automatically)</label>
+            <div class="input-group">
+              <input type="text" id="prettyLinkExec" class="form-control" readonly>
+              <span class="input-group-btn">
+                <button class="btn btn-default copy-clipboard-button">
+                  <i class="glyphicon glyphicon-copy"></i> Copy
+                </button>
+              </span>                    
+            </div>
+            <div class="ok-text collapse">
+              <i class="glyphicon glyphicon-ok"></i> Copied URL to clipboard
+            </div>
+          </div>
+          <br>
+          <div>
+            <label>URL to this query in the QLever UI (long, with full query string)</label>
+            <div class="input-group">
+              <input type="text" id="queryStringLink" class="form-control" readonly>
+              <span class="input-group-btn">
+                <button class="btn btn-default copy-clipboard-button">
+                  <i class="glyphicon glyphicon-copy"></i> Copy
+                </button>
+              </span>
+            </div>
+            <div class="ok-text collapse">
+              <i class="glyphicon glyphicon-ok"></i> Copied URL to clipboard
+            </div>
+          </div>
+          <br>
+          <div>
+            <label>URL for GET request (for use in web apps, etc.)</label>
+            <div class="input-group">
+              <input type="text" id="apiCallUrl" class="form-control" readonly>
+              <span class="input-group-btn">
+                <button class="btn btn-default copy-clipboard-button">
+                  <i class="glyphicon glyphicon-copy"></i> Copy
+                </button>
+              </span>
+            </div>
+            <div class="ok-text collapse">
+              <i class="glyphicon glyphicon-ok"></i> Copied URL to clipboard
+            </div>
+          </div>
+          <br>
+          <div>
+            <label id="apiCallCommandLineLabelPost">Command line for POST query
+              using curl (%MEDIA_TYPE%)</label>
+            <div class="input-group">
+              <input type="text" id="apiCallCommandLinePost" class="form-control" readonly>
+              <span class="input-group-btn">
+                <button class="btn btn-default copy-clipboard-button">
+                  <i class="glyphicon glyphicon-copy"></i> Copy
+                </button>
+              </span>
+            </div>
+            <div class="ok-text collapse">
+              <i class="glyphicon glyphicon-ok"></i> Copied URL to clipboard
+            </div>
+          </div>
+          <br>
+          <div>
+            <label id="apiCallCommandLineLabelGet">Command line for GET query
+              using curl (%MEDIA_TYPE%)</label>
+            <div class="input-group">
+              <input type="text" id="apiCallCommandLineGet" class="form-control" readonly>
+              <span class="input-group-btn">
+                <button class="btn btn-default copy-clipboard-button">
+                  <i class="glyphicon glyphicon-copy"></i> Copy
+                </button>
+              </span>
+            </div>
+            <div class="ok-text collapse">
+              <i class="glyphicon glyphicon-ok"></i> Copied command to clipboard
+            </div>
+          </div>
+          <br>
+          <div>
+            <label>Unescaped query string (in one line)</label>
+            <div class="input-group">
+              <input type="text" id="queryStringUnescaped" class="form-control" readonly>
+              <span class="input-group-btn">
+                <button class="btn btn-default copy-clipboard-button">
+                  <i class="glyphicon glyphicon-copy"></i> Copy
+                </button>
+              </span>
+            </div>
+            <div class="ok-text collapse">
+              <i class="glyphicon glyphicon-ok"></i> Copied string to clipboard
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

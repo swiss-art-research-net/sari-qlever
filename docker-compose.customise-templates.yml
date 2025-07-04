@@ -1,0 +1,4 @@
+services:  
+  qlever-ui:
+    volumes:
+      - ./customisation/qlever-ui/templates:/app/backend/templates/partials
