@@ -1,6 +1,6 @@
 services:  
   qlever:
-    image: adfreiburg/qlever:commit-acb6633
+    image: adfreiburg/qlever:commit-3db56ec
     container_name: ${PROJECT_NAME}_qlever
     entrypoint: ["/init/init-wrapper.sh"]
     environment:
