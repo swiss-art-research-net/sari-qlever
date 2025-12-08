@@ -1,9 +1,18 @@
 #!/bin/sh
 CHECKFILE=/status/.qlever-ui-initialized
-if [ ! -f $CHECKFILE ]; then
+
+if [ ! -f "$CHECKFILE" ]; then
     echo "First time database initialization"
     python manage.py migrate
-    touch $CHECKFILE
+
+    echo "Removing demo user if it exists..."
+    python manage.py shell -c "
+from django.contrib.auth import get_user_model
+User = get_user_model()
+User.objects.filter(username='demo').delete()
+"
+
+    touch "$CHECKFILE"
     echo "Database initialization completed"
 fi
 
