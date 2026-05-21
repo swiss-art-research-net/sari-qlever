@@ -3,7 +3,7 @@ CHECKFILE=/status/.qlever-data-initialized
 if [ ! -f $CHECKFILE ]; then
     echo "First time indexing"
     cd /index
-    IndexBuilderMain -F nt -f /data/*.ttl -i qlever -s /init/settings.json -m '1 GB' -b '2 MB' -k false
+    qlever-index -F nt -f /data/*.ttl -i qlever -s /init/settings.json -m '1 GB' -b '2 MB' -k false
     if [ $? -ne 0 ]; then
         echo "Indexing failed with a non-zero exit code. Exiting."
         exit 1
