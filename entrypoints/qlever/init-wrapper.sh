@@ -14,4 +14,4 @@ fi
 
 # Start the QLever service
 cd /index
-ServerMain -i qlever -j 8 -p 7000 -m 5G -c 2G -e 1G -k 200 -s 30s -a $ACCESS_TOKEN
+qlever start --name qlever --description "$PROJECT_DESCRIPTION" --system native --port 7000 --access-token $ACCESS_TOKEN

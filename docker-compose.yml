@@ -1,10 +1,12 @@
 services:  
   qlever:
-    image: adfreiburg/qlever:commit-3db56ec
+    image: adfreiburg/qlever:commit-58d19c7
     container_name: ${PROJECT_NAME}_qlever
     entrypoint: ["/init/init-wrapper.sh"]
     environment:
       - ACCESS_TOKEN=${ACCESS_TOKEN}
+      - PROJECT_NAME=${PROJECT_NAME}
+      - PROJECT_DESCRIPTION=${PROJECT_DESCRIPTION}
     user: "0:0"
     restart: unless-stopped
     logging:
